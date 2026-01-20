@@ -1,5 +1,158 @@
-
+body{
+    margin: 0;
+}
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+header{
+    background-color: #1A0B2E;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 01rem 12.5rem;
+    align-items: center;
+}
+#logofirst{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+#logosecond{
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    color: transparent;
+}
+nav .menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+.navbtn{
+    width: 135px;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(45deg, #9100F8, #FB09B4, #F7E93F);
+    border-radius: 10px;
+    gap: 4px;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 80px;
+
+}
+#bannerbg{
+    width: 100%;
+}
+.banner-images #bannercircle {
+    width: 350px;
+    height: 350px;
+}
+.choosebox{
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
+.choosebox-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.box-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.box-item img{
+    width: 60px;
+    height: 60px;
+}
+.box-item h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.box-item p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+.box-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-color: #351165;
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+}
+.box-2, .box-3{
+    grid-column: span 2;
+    background-color: #351165;
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+
+}
+.box-4{
+    grid-column: span 2;
+    background-color: #351165;
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+}
+.box-5{
+    grid-column: span 1;
+    background-color: #351165;
+    border: none;
+    border-radius: 15px;
+    padding: 40px;
+}
+footer{
+    background-image: url(./assets/footer-bg.png);
+    height: 412px;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+#ft-logo-white{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+#ft-logo-gradient{
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    color: transparent;
+}
+#social-links{
+    display: flex;
+    gap: 40px;
+    color: #ffffff;
+    list-style: none;
+}
+#social-links .social-icon{
+    gap: 8px;
+}
+.footer-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 32px;
 }

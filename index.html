@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>TechWave</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -13,23 +14,22 @@
 <body class="inter">
     <header>
         <nav>
-            <div>TechWave</div>
-            <menu>
-                <ul>
-                    <li>About</li>
-                    <li>Episodes</li>
-                    <li>Host</li>
-                </ul>
-                <button>Subscribe</button>
-            </menu>
+            <h1><span id="logofirst">Tech</span><span id="logosecond">Wave</span></h1>
+                
+            <ul class="menu">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+            <button class="navbtn">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
         </nav>
     </header>
 
     <section class="banner">
         <div class="banner-images">
-            <img src="./assets/hero-bg.png" alt="">
-            <img src="./assets/hero-circle.png" alt="">
-            <img src="./assets/microphone.png" alt="">
+            <img id="bannerbg" src="./assets/hero-bg.png" alt="">
+            <img id="bannercircle" src="./assets/hero-circle.png" alt="">
+            <img id="microphone" src="./assets/microphone.png" alt="">
         </div>
 
         <div>
@@ -73,30 +73,30 @@
     </section>
 
     <section class="choosebox">
-        <h3>Why Choose TechWave</h3>
+        <h3 class="choosebox-title">Why Choose TechWave</h3>
 
         <div class="box-item">
-            <div class="box">
+            <div class="box-1">
                 <img src="./assets/headphone.png" alt="">
                 <h4>Premium Audio Quality</h4>
                 <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
             </div>
-            <div class="box">
+            <div class="box-2">
                 <img src="./assets/device.png" alt="">
                 <h4>Mobile Friendly</h4>
                 <p>Listen on the go with seamless mobile experience and offline downloads.</p>
             </div>
-            <div class="box">
+            <div class="box-3">
                 <img src="./assets/location.png" alt="">
                 <h4>Global Community</h4>
                 <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
             </div>
-            <div class="box">
+            <div class="box-4">
                 <img src="./assets/zap-fast.png" alt="">
                 <h4>Exclusive Interviews</h4>
                 <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
             </div>
-            <div class="box">
+            <div class="box-5">
                 <img src="./assets/resource.png" alt="">
                 <h4>Rich Resources</h4>
                 <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -149,17 +149,13 @@
     </section>
 
     <footer>
-        <div class="footer-image">
-            <img src="./assets/footer-bg.png" alt="">
-        </div>
-
-        <div id="footer-content">
-            <h1>TechWave</h1>
-            <ul>
-                <li><img src="./assets/spotify.png" alt="">Spotify</li>
-                <li><img src="./assets/apple-podcast.png" alt="">Apple Podcasts</li>
-                <li><img src="./assets/youtube-podcast.png" alt="">YouTube</li>
-                <li><img src="./assets/twitter.png" alt="">Twitter</li>
+        <div class="footer-content">
+            <h1><span id="ft-logo-white">Tech</span><span id="ft-logo-gradient">Wave</span></h1>
+            <ul id="social-links">
+                <li class="social-icon"><img src="./assets/spotify.png" alt="">Spotify</li>
+                <li class="social-icon"><img src="./assets/apple-podcast.png" alt="">Apple Podcasts</li>
+                <li class="social-icon"><img src="./assets/youtube-podcast.png" alt="">YouTube</li>
+                <li class="social-icon"><img src="./assets/twitter.png" alt="">Twitter</li>
             </ul>
             <p>© 2026 TechWave Podcast. All rights reserved.</p>
         </div>
