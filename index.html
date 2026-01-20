@@ -21,36 +21,37 @@
                 <li>Episodes</li>
                 <li>Host</li>
             </ul>
-            <button class="navbtn">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="navbtn">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
         </nav>
     </header>
 
     <section class="banner">
         <div class="banner-images">
-            <img id="bannerbg" src="./assets/hero-bg.png" alt="">
             <img id="bannercircle" src="./assets/hero-circle.png" alt="">
             <img id="microphone" src="./assets/microphone.png" alt="">
+            <button id="new-btn">NEW</button>
         </div>
 
-        <div>
+
+        <div class="banner-content">
             <h1>TechWave</h1>
             <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
         </div>
 
-        <div>
-            <button>Listen on Spotify</button>
-            <button>Subscribe</button>
+        <div class="banner-btn">
+            <button id="primary-btn"><i><img src="./assets/spotify.png" alt=""></i> Listen on Spotify</button>
+            <button id="secondery-btn"><i><img src="./assets/message.png" alt=""></i> Subscribe</button>
         </div>
     </section>
 
     <section class="about-section">
         <div class="about-content">
         <h2>About the Podcast</h2>
-        <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.</p>
-        <p>We break down complex topics into digestible insights, explore productivity strategies that actually work,<br>
-            and share stories of personal growth from industry leaders.</p>
-        <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+        <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>and share stories of personal growth from industry leaders.</p>
+        <h6>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</h6>
         </div>
+
+        <div class="divider"></div>
 
         <div class="about-cards">
             <div class="card">
@@ -105,28 +106,50 @@
     </section>
 
     <section class="media-section">
+
         <div class="youtube-links">
             <h2>Featured Episodes</h2>
-        <div class="video">
-            <div>
-                <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/KKNCiRWd_j0?si=GgpBv7vTJii6UU9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0"></iframe>
-            </div>
-
-            <div>
-                <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/p_kF_SDB0-c?si=MHPIeC8lMOVQXmPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0"></iframe>
-            </div>
-
-            <div>
-                <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/B23W1gRT9eY?si=YBk2M7dKqYtp0h7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0"></iframe>
-            </div>
-
         </div>
-            
+
+        <div class="cards">
+            <div class="card-1">
+                <div class="card-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CRraHg4Ks_g?si=8xX_jYsPPdQ3jvIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-content">
+                    <h4>The Future of AI in Everyday Life</h4>
+                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                    <h6><i><img src="./assets/clock.png" alt=""></i> 42 min</h6>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="card-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CRraHg4Ks_g?si=8xX_jYsPPdQ3jvIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-content">
+                    <h4>The Future of AI in Everyday Life</h4>
+                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                    <h6><i><img src="./assets/clock.png" alt=""></i> 42 min</h6>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="card-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CRraHg4Ks_g?si=8xX_jYsPPdQ3jvIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card-content">
+                    <h4>The Future of AI in Everyday Life</h4>
+                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                    <h6><i><img src="./assets/clock.png" alt=""></i> 42 min</h6>
+                </div>
+            </div>
         </div>
 
         <div class="host">
             <div class="host-title">
-                <div><h2>Meet the Host</h2></div>
+                <h2>Meet the Host</h2>
             </div>
 
             <div class="host-card">
@@ -151,7 +174,7 @@
     <footer>
         <div class="footer-content">
             <h1><span id="ft-logo-white">Tech</span><span id="ft-logo-gradient">Wave</span></h1>
-            <ul id="social-links">
+            <ul class="social-links">
                 <li class="social-icon"><img src="./assets/spotify.png" alt="">Spotify</li>
                 <li class="social-icon"><img src="./assets/apple-podcast.png" alt="">Apple Podcasts</li>
                 <li class="social-icon"><img src="./assets/youtube-podcast.png" alt="">YouTube</li>
