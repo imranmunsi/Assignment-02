@@ -1,19 +1,19 @@
-body{
-    margin: 0 0;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 
-header{
+.nav-container{
     background-color: #1A0B2E;
-}
-nav{
     display: flex;
     justify-content: space-between;
     padding: 01rem 12.5rem;
     align-items: center;
+    width: 100%;
 }
 #logofirst{
     font-size: 2rem;
@@ -28,6 +28,10 @@ nav{
     background-clip: text;
     color: transparent;
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
 nav .menu{
     display: flex;
     list-style: none;
@@ -35,6 +39,7 @@ nav .menu{
     font-size: 1rem;
     font-weight: 500;
     color: #ffffff;
+    cursor: pointer;
 }
 .navbtn{
     width: 135px;
@@ -52,6 +57,9 @@ nav .menu{
 }
 .banner{
     background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -67,16 +75,16 @@ nav .menu{
     height: 350px;
 }
 #bannercircle {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
     position: relative;
-    left: 145px;
+    left: 106px;
     top: 12px;
     margin-bottom: 40px;
 }
 #microphone{
     position: relative;
-    left: 190px;
+    left: 150px;
     top: -300px;
     transition: transform 5s;
 }
@@ -89,7 +97,7 @@ nav .menu{
     padding: 8px 16px;
     position: relative;
     bottom: 500px;
-    left: 230px;
+    left: 190px;
     font-size: 18px;
     font-weight: 400;
     color: #1A0B2E;
@@ -168,11 +176,14 @@ nav .menu{
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
+    margin-bottom: 16px;
 }
 .about-content p{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
+    line-height: 20px;
+    margin-bottom: 32px;
 }
 .about-content h6{
     font-size: 1rem;
@@ -186,7 +197,8 @@ nav .menu{
     margin: 80px auto;
 }
 .about-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 80px;
 }
@@ -208,6 +220,9 @@ nav .menu{
 .choosebox{
     background-color: #230E3D;
     padding: 120px 200px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .choosebox-title{
     font-size: 4rem;
@@ -284,6 +299,7 @@ nav .menu{
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+    margin-bottom: 40px;
 }
 .card-iframe iframe{
     width: 380px;
@@ -333,6 +349,7 @@ nav .menu{
     color: #ffffff;
     text-align: center;
     margin-top: 140px;
+    margin-bottom: 40px;
 }
 .host-card{
     display: flex;
@@ -347,36 +364,52 @@ nav .menu{
     width: 200px;
     height: 200px;
 }
+#host-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content:flex-start;
+    text-align: left;
+}
 #host-content h2{
     font-size: 2rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 16px;
 }
 #host-content p{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
-    margin-bottom: 16px;
 }
 #host-content ul{
     display: flex;
     list-style: none;
     gap: 8px;
+    padding: 0;
 }
 #host-content ul img{
-    height: 20px;
-    width: 20px;
-}
-footer{
-    background-image: url(./assets/footer-bg.png);
+    height: 25px;
+    width: 25px;
+    border: 2px solid #533c72;
+    border-radius: 50%;
+    padding: 3px;
+    object-fit: contain;
+
+  
 }
 .footer-content{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 412px;
     display: flex;
+    gap: 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    text-align: center;
+    padding: 120px;
 }
 #ft-logo-white{
     font-size: 4rem;
@@ -405,5 +438,58 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
-    margin-top: 32px;
+}
+@media screen  and (max-width: 576px) {
+
+    .nav-container{
+        padding: 16px 20px;
+    }
+    .nav-container .menu{
+        display: none;
+    }
+    .nav-container .navbtn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner{
+        padding: 40px 20px;
+    }
+
+    .youtube-links{
+        font-size: 32px;
+    }
+    .about-section{
+        padding: 40px 20px;
+    }
+    .about-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+    .choosebox{
+        padding: 40px 20px;
+    }
+
+    .box-item{
+    grid-template-columns: repeat(1, 1fr);
+}
+    .media-section{
+        padding: 40px 20px;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .host-card{
+        flex-direction: column;
+    }
+    #host-content{
+        justify-content:center;
+        text-align: center;
+    }
+    #host-content ul{
+        justify-content: center;
+    }
+    
 }
