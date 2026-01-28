@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 .inter {
   font-family: "Inter", sans-serif;
@@ -64,6 +65,8 @@ nav .menu{
     flex-direction: column;
     text-align: center;
     padding: 101px 480px;
+    width: 100%;
+    
 }
 .banner-images:hover #microphone{
     transform: rotate(360deg);
@@ -284,7 +287,8 @@ nav .menu{
     padding: 120px 200px;
 }
 .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 .card-1, .card-2, .card-3 {
@@ -399,12 +403,12 @@ nav .menu{
 }
 .footer-content{
     background-image: url(./assets/footer-bg.png);
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 412px;
     display: flex;
-    gap: 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -424,10 +428,13 @@ nav .menu{
     color: transparent;
 }
 .social-links{
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
     color: #ffffff;
     list-style: none;
+    margin-top: 32px;
+    justify-items: center;
 }
 .social-icon{
     display: flex;
@@ -438,6 +445,8 @@ nav .menu{
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
+    margin-top: 48px;
+    background-size: cover;
 }
 @media screen  and (max-width: 576px) {
 
@@ -455,6 +464,7 @@ nav .menu{
     }
     .banner{
         padding: 40px 20px;
+        background-size: cover;
     }
 
     .youtube-links{
@@ -470,17 +480,25 @@ nav .menu{
     .choosebox{
         padding: 40px 20px;
     }
+    .choosebox-title{
+        font-size: 32px;
+    }
 
     .box-item{
     grid-template-columns: repeat(1, 1fr);
 }
+    .box-1, .box-2, .box-3, .box-4, .box-5{
+        padding: 24px;
+    }
     .media-section{
         padding: 40px 20px;
+        margin: 0 auto;
     }
     .cards{
-        flex-direction: column;
-        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
+    
     .host-card{
         flex-direction: column;
     }
@@ -491,5 +509,14 @@ nav .menu{
     #host-content ul{
         justify-content: center;
     }
+    .footer-content{
+        padding: 40px 20px;
+        background-size: cover;
+        
+    }
+    .social-links{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
     
+}
 }
